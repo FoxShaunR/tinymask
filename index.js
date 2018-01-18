@@ -79,7 +79,8 @@ TinyMask.prototype.mask = function (value) {
 			valueResolved++;
 		}
 		else {
-			break;
+			valueResolved++;
+			maskResolved--;
 		}
 
 		maskResolved++;

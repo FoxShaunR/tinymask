@@ -9,10 +9,10 @@ test('12345 and mask 99999 results on 12345', function() {
 	expect(result).toBe(expected);
 });
 
-test('abc123 and mask 99999 results on ""', function() {
+test('abc123 and mask 99999 results on "123"', function() {
 	var instance = new TinyMask('99999');
 
-	var expected = '';
+	var expected = '123';
 	var result = instance.mask('abc123');
 
 	expect(result).toBe(expected);

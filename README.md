@@ -2,10 +2,9 @@
 A js mask simple like killing zombies =).
 
 ## Usage
-Install it from npm using `npm install --save tinymask`
 
 ```js
-var TinyMask = require('tinymask')
+var TinyMask = require('tinymask-truncate-fix')
 var maskInstance = TinyMask('9999-9999');
 
 var result = maskInstance.mask('12345678');
@@ -83,6 +82,9 @@ var maskInstance = TinyMask('9999-9999', {
 ```
 
 ## Release Notes
+
+## 1.0.3
+* Remove invalid characters from mask instead of truncating at invalid character
 
 ## 1.0.2
 * Fixing editing after complete mask.
